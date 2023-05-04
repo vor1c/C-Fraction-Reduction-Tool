@@ -8,7 +8,7 @@ int ggt(int a, int b) {
     if (b == 0) {
         return a;
     }
-    return gcd(b, a % b);
+    return ggt(b, a % b); //rekursion
 }
 
 // Funktion zur Kürzung des Bruchs
